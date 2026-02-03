@@ -14,11 +14,14 @@ Program if variable = x then Print "Text";
 Program if variable < x then Print "Text";
 Program if variable > x then Print "Text";
 Program Calculate 2 + 2;
+Program Calculate 2 * 7 - 9;
 Program Calculate variable1 + variable2;
 Program Print variable1 + variable2;
 Program Stop;
 Program Ask "Text", answer;
 Program if variable > x and variable2 < y then Print "Text";
 Program if variable != x or variable2 != y then Print "Text";
+Program if variable > x then Print "Text" else Print "Text";
+
 
 
