@@ -1,0 +1,28 @@
+Program Start;
+Program call function: Loop;
+Program call function: Print;
+Program call function: Calculate;
+Program call function: Ask;
+
+Program Ask "How old are you?", answer;
+
+Program if answer = 18 then Print "You're 18.";
+Program if answer < 18 then Print "You're young!";
+Program if answer > 18 then Print "You're older than eighteen.";
+
+Program Print "I guess if you're that old... verify what you're not a robot...";
+Program Ask "What's 10 + 12?", answer2;
+
+
+Program if answer2 = 22 then Print "Good job.";
+Program if answer2 != 22 then Print "Bad.";
+
+Program Print "To let you know... 10 + 12 is.... 22";
+Program Loop "22", 22
+
+Program Ask "Did you Understood it? (type Yes if yes)", answer3;
+
+Program if answer3 = "Yes" then Print "Fine.";
+Program End;
+
+

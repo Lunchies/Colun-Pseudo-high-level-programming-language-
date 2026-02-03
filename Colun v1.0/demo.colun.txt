@@ -1,0 +1,47 @@
+! ДЕМОНСТРАЦИЯ ВСЕХ ВОЗМОЖНОСТЕЙ COLUN
+Program Start;
+Program call function: Print;
+Program call function: Calculate;
+Program call function: Loop;
+Program call function: Ask;
+
+! 1. ВВОД ДАННЫХ
+Program Print "=== ПРИВЕТСТВИЕ ===";
+Program Ask "Как тебя зовут?", имя;
+Program Ask "Сколько тебе лет?", возраст;
+
+! 2. ВЫВОД С ПЕРЕМЕННЫМИ
+Program Print "Привет,", имя;
+Program Print "Тебе", возраст;
+Program Print "лет";
+
+! 3. УСЛОВИЯ С ТЕКСТОМ И ЧИСЛАМИ
+Program if возраст = 18 then Print "Ровно 18 лет!";
+Program if возраст > 18 then Print "Ты взрослый!";
+Program if возраст < 18 then Print "Ты ещё молод!";
+
+! 4. СЛОЖНЫЕ УСЛОВИЯ (and/or)
+Program Ask "Ты любишь программирование? (Yes/No)", ответ;
+Program if ответ = "Yes" or ответ = "Maybe" then Print "Отлично!";
+Program if ответ != "Yes" and ответ != "No" then Print "Нужно ответить Yes или No!";
+
+! 5. ВЫЧИСЛЕНИЯ
+Program create value: год_рождения;
+год_рождения = 2025
+Program Print "Ты родился в:", год_рождения;
+
+! 6. ЦИКЛЫ
+Program Print "=== ЦИКЛЫ ===";
+Program Loop "Повторение!", 3;
+Program Loop 5 * 5, 2;
+Program Loop возраст + 5, 1;
+
+! 7. БЕСКОНЕЧНЫЙ ЦИКЛ
+Program Print "Бесконечный цикл (остановим через 1 сек)...";
+Program Loop "Бесконечно...";
+Program Stop;
+
+! 8. ФИНАЛ
+Program Print "=== КОНЕЦ ДЕМОНСТРАЦИИ ===";
+Program Print "Спасибо за использование Colun!";
+Program End;

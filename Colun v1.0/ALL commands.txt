@@ -1,0 +1,24 @@
+Program Start;
+Program End;
+Program call function: Ask;
+Program call function: Loop;
+Program call function: Print;
+Program call function: Calculate;
+Program Print "Text";
+Program Loop "Text", N;
+Program create value: variable;
+variable = x;
+Program if variable != x then Print "Text";
+Program Print 'This is "TEXT"';
+Program if variable = x then Print "Text";
+Program if variable < x then Print "Text";
+Program if variable > x then Print "Text";
+Program Calculate 2 + 2;
+Program Calculate variable1 + variable2;
+Program Print variable1 + variable2;
+Program Stop;
+Program Ask "Text", answer;
+Program if variable > x and variable2 < y then Print "Text";
+Program if variable != x or variable2 != y then Print "Text";
+
+
